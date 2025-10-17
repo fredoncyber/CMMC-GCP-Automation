@@ -1,0 +1,5 @@
+Control_ID,Control_Family,Control_Name,CMMC_Level,Manual_Evidence,Automation_Script,Evidence_Source,Owner,Compliance_Status,Tags
+AC.1.001,Access Control,Limit system access to authorized users,L1,Access Control Policy; user access review logs; least-privilege standard,gcp_iam_policy_export.py,Cloud IAM roles/bindings; Cloud Asset Inventory,Cloud Security,Needs Review,"IAM,Access,Policy"
+AC.1.002,Access Control,Limit access to authorized transactions/functions,L1,Role design matrix; SoD policy; change approvals,gcp_iam_policy_export.py,IAM role definitions and bindings; Org Policies,IT Admin,Compliant,"Roles,SoD,LeastPrivilege"
+AC.1.003,Access Control,Control remote access,L1,Remote Access Policy; VPN/IAP configuration; approval records,gcp_firewall_rules_export.sh,VPC Firewall; IAP settings; Cloud VPN,Network Admin,Needs Review,"RemoteAccess,Network,IAP"
+AC.1.004,Access Control,Separate duties of individuals,L1,SoD policy; access approval RACI; audit samples of change requests,gcp_project_config_snapshot.py,IAM bindings; Org Policy constraints; Project-level permissions,GRC,Compliant,"SoD,Governance,Approvals"
