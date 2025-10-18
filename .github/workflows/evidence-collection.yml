@@ -47,7 +47,7 @@ jobs:
 
       - name: Run Level2 scripts
         run: |
-          cd ../../Level2/evidence_scripts
+          cd $GITHUB_WORKSPACE/Level2/evidence_scripts
           chmod +x gcp_vpc_network_audit.sh
           python gcp_iam_service_account_audit.py || true
           python gcp_logging_sink_export.py || true
