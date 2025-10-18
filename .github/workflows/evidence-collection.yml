@@ -64,6 +64,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: evidence-bundle
-          path: |
-            evidence_bundle_*.tar.gz
-            evidence_bundle_*.sha256
+          path: evidence_output/
